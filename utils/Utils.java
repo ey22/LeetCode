@@ -1,7 +1,7 @@
 package utils;
 
-public class RemoveDuplicatesFromSortedArray {
-    public int[] sortedArray(int[] nums) {
+public class Utils {
+    public static int[] sortedArray(int[] nums) {
         boolean sorted = false;
         int i = 0;
         while (!sorted) {
@@ -24,7 +24,7 @@ public class RemoveDuplicatesFromSortedArray {
         return nums;
     }
 
-    public boolean checkSortedArray(int[] nums){
+    public static boolean checkSortedArray(int[] nums){
         int i;
         for(i = 0; i < nums.length-1; i++){
             if (nums[i] > nums[i+1]){
